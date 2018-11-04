@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ELH>
+    <patient id="1">
+        <personalInformations>
+            <photo>images/Obama.jpg</photo>
+            <firstName>Barak</firstName>
+            <lastName>Obama</lastName>
+            <gender>male</gender>
+            <CNP>1811116385678</CNP>
+            <age>48</age>
+            <address>White House, DC</address>
+            <phoneNumber>0758777026</phoneNumber>
+        </personalInformations>
+        <medicalInformations>
+            <medicalHistory>
+                <medicalObservations date="2017-10-26">Red Nose</medicalObservations>
+                <medicalObservations date="2018-02-26">Snoot</medicalObservations>
+            </medicalHistory>
+            <diagnoses>
+                <diagnose date="2018-02-26">Flu</diagnose>
+                <diagnose date="2018-05-261">Excesive Cough</diagnose>
+                <treatmentPlans>
+                    <treatmentPlan date="2018-02-26">One week rest at home</treatmentPlan>
+                    <treatmentPlan date="2018-05-26">Two weeks rest at home</treatmentPlan>
+                    <medications>
+                        <medicine date="2018-02-26">Aspirin</medicine>
+                        <medicine date="2018-05-26">Paracetamol</medicine>
+                    </medications>
+                </treatmentPlans>
+            </diagnoses>
+            <immunizations>
+                <immunization date="2018-05-26">Yellow Fever</immunization>
+                <immunization date="2018-05-26">AntiTetanos</immunization>
+            </immunizations>
+            <allergies>
+                <allergie date="2018-05-26">Dogs </allergie>
+                <allergie date="2018-05-26">Cats</allergie>
+            </allergies>
+            <radiologyImages>
+                <radiologyImage visited="1" date="2018-05-26"/>
+                <radiologyImage visited="2" date="2018-05-25"/>
+            </radiologyImages>
+            <laboratoryTestResults>
+                <laboratoryTestResult date="2018-05-26"/>
+                <laboratoryTestResult date="2018-05-26"/>
+            </laboratoryTestResults>
+        </medicalInformations>
+    </patient>
+    <patient id="2">
+        <personalInformations>
+            <photo>images/Einstein.jpg</photo>
+            <firstName>Albert</firstName>
+            <lastName>Einstein</lastName>
+            <gender>male</gender>
+            <CNP>1811116385678</CNP>
+            <address>USA</address>
+            <phoneNumber>134584500</phoneNumber>
+        </personalInformations>
+                <medicalInformations>
+            <medicalHistory>
+                <medicalObservations date="2017-10-26">Red Nose</medicalObservations>
+                <medicalObservations date="2018-02-26">Snoot</medicalObservations>
+            </medicalHistory>
+            <diagnoses>
+                <diagnose date="2018-02-26">Flu</diagnose>
+                <diagnose date="2018-05-261">Excesive Cough</diagnose>
+                <treatmentPlans>
+                    <treatmentPlan date="2018-02-26">One week rest at home</treatmentPlan>
+                    <treatmentPlan date="2018-05-26">Two weeks rest at home</treatmentPlan>
+                    <medications>
+                        <medicine date="2018-02-26">Aspirin</medicine>
+                        <medicine date="2018-05-26">Paracetamol</medicine>
+                    </medications>
+                </treatmentPlans>
+            </diagnoses>
+            <immunizations>
+                <immunization date="2018-05-26">Yellow Fever</immunization>
+                <immunization date="2018-05-26">AntiTetanos</immunization>
+            </immunizations>
+            <allergies>
+                <allergie date="2018-05-26">Dogs </allergie>
+                <allergie date="2018-05-26">Cats</allergie>
+            </allergies>
+            <radiologyImages>
+                <radiologyImage visited="1" date="2018-05-26"/>
+                <radiologyImage visited="2" date="2018-05-25"/>
+            </radiologyImages>
+            <laboratoryTestResults>
+                <laboratoryTestResult date="2018-05-26"/>
+                <laboratoryTestResult date="2018-05-26"/>
+            </laboratoryTestResults>
+        </medicalInformations>
+    </patient>
+</ELH>

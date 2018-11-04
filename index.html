@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>Electronic Health Records</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"></link> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    </head>
+    <body onload="displayResult()">
+        <div class="header">
+            <h1>Electronic Health Records</h1>
+            <h3 id="subtitle"></h3>
+        </div
+>        
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#addPatient">Add new Patient</a>
+			<div class="dropdown">
+			  <button class="dropbtn">Select operation.. <i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+			  <div class="dropdown-content">
+			    <a href="#" class="responsive">Treatment plans last year</a>
+			    <a href="#">Information about a medicine</a>
+			    <a href="#">Number of allergies</a>
+			    <a href="#">Visited test laboratories</a>
+			    <a href="#">Patients with no radiology</a>
+			    <a href="#">Immunizations on a date</a>
+			    <a href="#">Test results last month</a>
+			  </div>
+			</div>
+        </div>
+        
+        <div class="row" id="informations">
+        </div>
+        
+        <div class="footer">
+            <h3>Floroiu Cristina and Bejan Consuela, Semantic Web 2018</h3>
+        </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="utilities.js"></script>
+            <script src="SaxonJS.min.js"></script>
+			<script type="text/javascript">
+				SaxonJS.transform({
+			         stylesheetLocation: "demox.sef.xml",
+			         sourceLocation: "elh.xml",
+			         initialTemplate: "Q{http://www.w3.org/1999/XSL/Transform}initial-template"
+			      });
+			</script>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+Github page: https://nativefairie.github.io/Electronic-Health-Recorder-XML
+Github code: https://github.com/nativefairie/Electronic-Health-Recorder-XML

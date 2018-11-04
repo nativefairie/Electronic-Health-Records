@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      targetNamespace="https://nativefairie.github.io/Electronic-Health-Records"
+      xmlns="https://nativefairie.github.io/Electronic-Health-Records"
+      elementFormDefault="qualified">
+      <xs:element name="ELH">
+            <xs:complexType>
+                  <xs:sequence>
+                        <xs:element maxOccurs="unbounded" name="patient">
+                              <xs:complexType>
+                                    <xs:sequence>
+                                          <xs:element name="personalInformations">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element name="photo" type="xs:string" />
+                                                            <xs:element name="firstName" type="xs:string" />
+                                                            <xs:element name="lastName" type="xs:string" />
+                                                            <xs:element name="gender" type="xs:string" />
+                                                            <xs:element name="CNP" type="xs:unsignedLong" />
+                                                            <xs:element name="address" type="xs:string" />
+                                                            <xs:element name="phoneNumber" type="xs:unsignedInt" />
+                                                      </xs:sequence>
+                                                </xs:complexType>
+                                          </xs:element>
+                                          <xs:element name="medicalInformations">
+                                                <xs:complexType>
+                                                      <xs:sequence>
+                                                            <xs:element name="medicalHistory">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="medicalObservations">
+                                                                                    <xs:complexType>
+                                                                                          <xs:simpleContent>
+                                                                                                <xs:extension base="xs:string">
+                                                                                                      <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                                </xs:extension>
+                                                                                          </xs:simpleContent>
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="diagnoses">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="diagnose">
+                                                                                    <xs:complexType>
+                                                                                          <xs:simpleContent>
+                                                                                                <xs:extension base="xs:string">
+                                                                                                      <xs:attribute name="date" type="xs:string" use="optional" />
+                                                                                                </xs:extension>
+                                                                                          </xs:simpleContent>
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                              <xs:element name="treatmentPlans">
+                                                                                    <xs:complexType>
+                                                                                          <xs:sequence>
+                                                                                                <xs:element maxOccurs="unbounded" name="treatmentPlan">
+                                                                                                      <xs:complexType>
+                                                                                                            <xs:simpleContent>
+                                                                                                                  <xs:extension base="xs:string">
+                                                                                                                        <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                                                  </xs:extension>
+                                                                                                            </xs:simpleContent>
+                                                                                                      </xs:complexType>
+                                                                                                </xs:element>
+                                                                                                <xs:element name="medications">
+                                                                                                      <xs:complexType>
+                                                                                                            <xs:sequence>
+                                                                                                                  <xs:element maxOccurs="unbounded" name="medicine">
+                                                                                                                        <xs:complexType>
+                                                                                                                              <xs:simpleContent>
+                                                                                                                                    <xs:extension base="xs:string">
+                                                                                                                                          <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                                                                    </xs:extension>
+                                                                                                                              </xs:simpleContent>
+                                                                                                                        </xs:complexType>
+                                                                                                                  </xs:element>
+                                                                                                            </xs:sequence>
+                                                                                                      </xs:complexType>
+                                                                                                </xs:element>
+                                                                                          </xs:sequence>
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="immunizations">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="immunization">
+                                                                                    <xs:complexType>
+                                                                                          <xs:simpleContent>
+                                                                                                <xs:extension base="xs:string">
+                                                                                                      <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                                </xs:extension>
+                                                                                          </xs:simpleContent>
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="allergies">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="allergie">
+                                                                                    <xs:complexType>
+                                                                                          <xs:simpleContent>
+                                                                                                <xs:extension base="xs:string">
+                                                                                                      <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                                </xs:extension>
+                                                                                          </xs:simpleContent>
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="radiologyImages">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="radiologyImage">
+                                                                                    <xs:complexType>
+                                                                                          <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                            <xs:element name="laboratoryTestResults">
+                                                                  <xs:complexType>
+                                                                        <xs:sequence>
+                                                                              <xs:element maxOccurs="unbounded" name="laboratoryTestResult">
+                                                                                    <xs:complexType>
+                                                                                          <xs:attribute name="date" type="xs:date" use="optional" />
+                                                                                    </xs:complexType>
+                                                                              </xs:element>
+                                                                        </xs:sequence>
+                                                                  </xs:complexType>
+                                                            </xs:element>
+                                                      </xs:sequence>
+                                                </xs:complexType>
+                                          </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+                              </xs:complexType>
+                        </xs:element>
+                  </xs:sequence>
+            </xs:complexType>
+      </xs:element>
+</xs:schema>
